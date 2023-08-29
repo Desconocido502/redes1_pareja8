@@ -217,7 +217,7 @@
   - Cantidad: 1
 - Gerencia 2:
   - Modelo: MacBook Pro
-  - Cantidad: 1
+  - Cantidad: 1Modelo: Cisco Catalyst 9300 Series
 - Operaciones 1:
   - Modelo: HP ZBook Studio G7
   - Cantidad: 1
