@@ -247,3 +247,19 @@
 - Switch de Nivel 3:
   - Modelo: Cisco Catalyst 9300 Series
   - Cantidad: 1
+
+## Funcionamiento del Protocolo ARP
+
+El Protocolo de Resolución de Direcciones (ARP) es esencial en redes Ethernet e IP, permitiendo a los dispositivos encontrar la dirección física (MAC) asociada a una dirección IP en la misma red local. Aquí se describe en detalle cómo funciona el protocolo ARP:
+
+1. **Solicitud ARP (ARP Request):** Cuando un dispositivo necesita enviar un paquete a una dirección IP específica, primero verifica su tabla ARP local. Si la dirección MAC correspondiente no está allí, envía una solicitud ARP broadcast para preguntar quién tiene la dirección IP buscada.
+
+2. **Recepción de la Solicitud ARP:** Todos los dispositivos en la misma red local reciben la solicitud ARP. Solo el dispositivo con la dirección IP destino responderá.
+
+3. **Respuesta ARP (ARP Reply):** El dispositivo con la dirección IP solicitada responde con un mensaje ARP broadcast que contiene su dirección MAC. Esta respuesta se envía directamente al dispositivo que hizo la solicitud ARP original.
+
+4. **Actualización de la Tabla ARP:** El dispositivo que originó la solicitud ARP recibe la respuesta y actualiza su tabla ARP local con la dirección IP y la dirección MAC correspondientes.
+
+5. **Caché ARP:** Los dispositivos suelen mantener en caché las entradas de la tabla ARP por un tiempo determinado (Tiempo de Vida de la Entrada ARP) para acelerar futuras resoluciones de direcciones.
+
+6. **Comunicación Usando la Dirección MAC:** Con la dirección MAC del destino conocida, el dispositivo encapsula el paquete en una trama Ethernet con la dirección MAC correcta. Esto garantiza la entrega precisa del paquete en la red local.
