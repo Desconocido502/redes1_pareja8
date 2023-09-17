@@ -352,6 +352,6 @@
 
 
 <p align="center">
-  <img src="./topologia.png" alt="Topologia" width="350" height="250">
+  <img src="./topologia.png" alt="Topologia" width="550" height="250">
 </p>
 
