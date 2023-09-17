@@ -1,0 +1,27 @@
+Linux 1. 192.168.248.10
+Linux 2. 192.168.248.20
+
+
+
+192.168.246.100
+
+192.168.246.80
+
+config system interface
+edit port1
+set mode static
+set ip 192.168.246.80/24
+set allowaccess ping https http
+next
+edit fortilink
+set vdom root
+set fortilink disable
+end
+
+config system settings
+set opmode transparent
+set manageip 192.168.246.80 255.255.255.0
+set gateway 192.168.246.100
+end
+
+192.168.246.72

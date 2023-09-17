@@ -1,0 +1,453 @@
+CONFIGURACION DE SERVERS
+
+------ ADMINISTRACION --------
+
+ip 172.16.9.2 
+mask 255.255.255.0
+gateway 172.16.9.1
+
+------- CONTROL ACADEMICO ------
+
+ip 172.16.10.2
+mask 255.255.255.0
+gateway 172.16.10.1
+
+----- CENTRO DE INVESTIGACIONES ----
+
+ip 172.16.11.2 
+mask 255.255.255.0
+gateway 172.16.11.1
+
+------ SEGURIDAD ----------------
+
+ip 172.16.12.2
+mask 255.255.255.0 
+gateway 172.16.12.1
+
+----------------------------------------
+
+
+CONFIGURACION DE LAS VPC
+
+------ ADM1 ---------
+
+set pcname ADM1
+ip 172.16.9.3/24 172.16.9.1
+save
+
+------- ADM2 --------
+
+set pcname ADM2
+ip 172.16.9.4/24 172.16.9.1
+save
+
+
+------- ACA1 --------
+
+set pcname ACA1
+ip 172.16.10.3/24 172.16.10.1
+save
+
+------- ACA2 --------
+
+set pcname ACA2
+ip 172.16.10.4/24 172.16.10.1
+save
+
+
+------ INV1 ---------
+
+set pcname INV1
+ip 172.16.11.3/24 172.16.11.1
+save
+
+------- INV2 ---------
+
+set pcname INV2
+ip 172.16.11.4/24 172.16.11.1
+save
+
+
+------ SEG1 ---------
+
+set pcname SEG1
+ip 172.16.12.3/24 172.16.12.1
+save
+
+
+------- SEG2 --------
+
+set pcname SEG2 
+ip 172.16.12.4/24 172.16.12.1
+save
+
+-----------------------------------
+
+CONFIGURACION DE LOS SWITCHES CAPA 2
+
+----------- SW1 -------------
+
+enable
+configure terminal
+hostname SW1
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode client
+end
+
+interface range e0/0 - 1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+interface e0/2
+switchport mode access
+switchport access vlan 108
+end
+
+interface e0/3
+switchport mode access
+switchport access vlan 408
+end
+
+interface e1/1
+switchport mode access
+switchport access vlan 308
+end
+
+interface e1/0
+switchport mode access
+switchport access vlan 208
+end
+
+interface range e1/2 - 3, e2/0 - 3, e3/0 - 1
+switchport mode access
+switchport access vlan 999
+end
+
+spanning-tree mode rapid-pvst
+end
+
+spanning-tree vlan 99
+end
+
+write memory
+
+
+
+
+(show interfaces status)
+
+----------- SW2 --------------
+
+enable
+configure terminal
+hostname SW2
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode client
+end
+
+interface range e0/0 - 1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+interface e0/2
+switchport mode access
+switchport access vlan 108
+end
+
+interface e0/3
+switchport mode access
+switchport access vlan 408
+end
+
+interface range e1/0 - 3, e2/0 - 3, e3/0 - 3
+switchport mode access
+switchport access vlan 999
+end
+
+spanning-tree mode rapid-pvst
+end
+
+spanning-tree vlan 99
+end
+
+write memory
+
+
+(show interfaces status)
+
+
+----------- SW3 --------------
+
+enable
+configure terminal
+hostname SW3
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode client
+end
+
+interface range e0/0 - 1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+interface e0/2
+switchport mode access
+switchport access vlan 308
+end
+
+interface e0/3
+switchport mode access
+switchport access vlan 208
+end
+
+interface range e1/0 - 3, e2/0 - 3, e3/0 - 3
+switchport mode access
+switchport access vlan 999
+end
+
+spanning-tree mode rapid-pvst
+end
+
+spanning-tree vlan 99
+end
+
+write memory
+
+
+(show interfaces status)
+
+---------- SW4 ---------------
+
+enable
+configure terminal
+hostname SW4
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode client
+end
+
+interface range e0/0 - 1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+interface e0/2
+switchport mode access
+switchport access vlan 408
+end
+
+interface e0/3
+switchport mode access
+switchport access vlan 208
+end
+
+interface range e1/0 - 3, e2/0 - 3, e3/0 - 3
+switchport mode access
+switchport access vlan 999
+end
+
+spanning-tree mode rapid-pvst
+end
+
+spanning-tree vlan 99
+end
+
+write memory
+
+(show interfaces status)
+
+
+--------- SW5 -----------------
+
+enable
+configure terminal
+hostname SW5
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode client
+end
+
+interface range e0/0 - 1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+interface e0/2
+switchport mode access
+switchport access vlan 108
+end
+
+interface e0/3
+switchport mode access
+switchport access vlan 308
+end
+
+interface range e1/0 - 3, e2/0 - 3, e3/0 - 3
+switchport mode access
+switchport access vlan 999
+end
+
+spanning-tree mode rapid-pvst
+end
+
+spanning-tree vlan 99
+end
+
+write memory
+
+(show interfaces status)
+
+
+-------------------------------------
+
+
+CONFIGURACION DE SWITCHES CAPA 3
+
+---------- ESW1 -----------------
+
+enable
+configure terminal
+hostname ESW1
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode server
+end
+
+enable
+configure terminal
+vlan 108
+name ADMINISTRACION
+exit
+//interface Vlan108
+//ip address 172.16.9.1 255.255.255.0
+//no shutdown
+
+vlan 208
+name ACADEMICO
+exit
+//interface Vlan208
+//ip address 172.16.10.1 255.255.255.0
+//no shutdown
+
+vlan 308
+name INVESTIGACIONES
+exit
+//interface Vlan308
+//ip address 172.16.11.1 255.255.255.0
+//no shutdown
+
+vlan 408
+name SEGURIDAD
+exit
+//interface Vlan408
+//ip address 172.16.12.1 255.255.255.0
+//no shutdown
+
+vlan 99
+name NATIVA
+vlan 999
+name BLACKHOLE
+exit
+
+interface range e0/0 - 3, e1/0 - 2
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+spanning-tree vlan 99 root primary
+spanning-tree mode rapid-pvst
+
+write memory
+
+
+
+
+
+
+
+---------- ESW2 ----------------
+
+enable
+configure terminal
+hostname ESW2
+
+vtp domain pareja08
+vtp password usac
+vtp version 2
+vtp mode transparent
+end
+
+vlan 108
+name ADMINISTRACION
+exit
+
+vlan 208
+name ACADEMICO
+exit
+
+vlan 308
+name INVESTIGACIONES
+exit
+
+vlan 408
+name SEGURIDAD
+exit
+
+vlan 99
+name NATIVA
+
+vlan 999
+name BLACKHOLE
+exit
+
+interface range e0/0 - 3, e1/0 - 2
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan all
+switchport trunk native vlan 99
+end
+
+spanning-tree mode rapid-pvst
+end
+
+spanning-tree vlan 99
+end
+
+write memory
+
+
+
+
+
+
+
+--------------------------------------

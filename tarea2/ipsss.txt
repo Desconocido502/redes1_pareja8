@@ -1,0 +1,110 @@
+ip: 123.141.111.101/24 123.141.11.1
+--------------------------------------------
+
+1.ip: 192.168.8.11/24
+2.ip: 192.168.8.21/24
+3.ip: 192.168.8.31/24
+4.ip: 192.168.8.12/24
+5.ip: 192.168.8.22/24
+6.ip: 192.168.8.32/24
+
+Vlan10: 192.168.8.11/24 | 192.168.8.12/24
+Vlan20: 192.168.8.21/24 | 192.168.8.22/24
+Vlan30: 192.168.8.31/24 | 192.168.8.32/24
+
+S1 -> ip: 192.168.8.1
+S2 -> ip: 192.168.8.2
+S3 -> ip: 192.168.8.3
+
+Gateway Global: 192.168.8.1
+mascara: 255.255.255.0
+
+enable
+configure terminal
+
+interface GigabitEthernet0/0 - 1
+switchport trunk native vlan 99
+
+
+
+Paso 1:
+
+enable 
+configure terminal
+hostname S1
+
+
+
+Paso 2:
+
+SWITCH 1:
+	vtp domain pareja8
+	vtp password redes1
+	vtp version 2
+	vtp mode server
+	end
+	write memory
+
+Configuracion de VLANS:
+	enable
+	configure terminal
+	vlan 10
+	name Docentes
+	vlan 20
+	name Estudiantes
+	vlan 30
+	name Visitantes
+	vlan 99
+	name Nativa
+	vlan 100
+	name Blackhole
+	exit
+
+Cambio de VLAN nativa:
+	interface GigabitEthernet0/1
+	switchport trunk native vlan 99
+
+
+SWITCH 2 y 3:
+	vtp domain pareja8
+	vtp password redes1
+	vtp version 2
+	vtp mode client
+	end
+	write memory
+
+
+
+Configuracion de puerto troncal
+	interface range GigabitEthernet0/1 - 2
+	switchport mode trunk
+	switchport trunk encapsulation dot1q
+	switchport trunk allowed vlan all
+switchport trunk native vlan 99
+
+
+
+show interfaces Ethernet0/1 switchport
+
+
+configure terminal
+interface Ethernet0/0
+switchport mode access
+switchport access vlan 99
+end
+write memory
+
+
+--------------------
+interface vlan 99
+ip address 192.168.8.1 255.255.255.0
+no shutdown
+exit
+
+switchport trunk native vlan 99.
+
+
+
+interface GigabitEthernet0/1
+switchport mode access
+switchport access vlan 99
