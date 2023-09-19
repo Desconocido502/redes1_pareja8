@@ -15,6 +15,12 @@
 
 <center>
 
+#### Implementación de la topología
+
+<p align="center">
+  <img src="./topologia.png" alt="Topologia" width="550" height="250">
+</p>
+
 #### Construcción de la topología
 
 </center>
@@ -351,7 +357,26 @@
 </ul>
 
 
+### Capturas de WireShark de ICMCP y STP
+
+#### ICMP:
+
 <p align="center">
-  <img src="./topologia.png" alt="Topologia" width="550" height="250">
+  <img src="./img/icmp.jpeg" alt="Topologia" width="550" height="250">
 </p>
 
+<p align="justify">Es un protocolo que se utiliza dentro de una red para comunicar problemas con las transmisión de datos. Una de las principales maneras en que se utiliza un ICMP es determinar si los datos llegan a su destino y en el momento correcto.</p>
+
+#### STP:
+
+<p align="center">
+  <img src="./img/stp.jpeg" alt="Topologia" width="550" height="250">
+</p>
+
+<p align="justify">El STP, definido por el estándar IEEE 802.1d es un protocolo que funciona en el <strong>nivel de la capa 2</strong> del modelo OSI y su principal objetivo es controlar los enlaces redundantes, asegurando el rendimiento de una red.</p>
+
+
+
+
+
+<!-- 3 innovaciones disruptivas, caracteristicas -->
