@@ -15,6 +15,110 @@
 
 <center>
 
+#### Tabla de direcciones
+
+<table>
+  <thead>
+    <tr>
+      <th>Departamento</th>
+      <th>Dirección IP</th>
+      <th>Máscara de Subred</th>
+      <th>Puerta de Enlace Predeterminada</th>
+      <th>VLAN</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Administración</td>
+      <td>172.16.9.2</td>
+      <td>255.255.255.0</td>
+      <td>172.16.9.1</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>Centro Académico</td>
+      <td>172.16.10.2</td>
+      <td>255.255.255.0</td>
+      <td>172.16.10.1</td>
+      <td>208</td>
+    </tr>
+    <tr>
+      <td>Centro de Investigación</td>
+      <td>172.16.11.2</td>
+      <td>255.255.255.0</td>
+      <td>172.16.11.1</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>Seguridad</td>
+      <td>172.16.12.2</td>
+      <td>255.255.255.0</td>
+      <td>172.16.12.1</td>
+      <td>408</td>
+    </tr>
+    <tr>
+      <td>ADM1 (VPC)</td>
+      <td>172.16.9.3/24</td>
+      <td>-</td>
+      <td>172.16.9.1</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>ADM2 (VPC)</td>
+      <td>172.16.9.4/24</td>
+      <td>-</td>
+      <td>172.16.9.1</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>ACA1 (VPC)</td>
+      <td>172.16.10.3/24</td>
+      <td>-</td>
+      <td>172.16.10.1</td>
+      <td>208</td>
+    </tr>
+    <tr>
+      <td>ACA2 (VPC)</td>
+      <td>172.16.10.4/24</td>
+      <td>-</td>
+      <td>172.16.10.1</td>
+      <td>208</td>
+    </tr>
+    <tr>
+      <td>INV1 (VPC)</td>
+      <td>172.16.11.3/24</td>
+      <td>-</td>
+      <td>172.16.11.1</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>INV2 (VPC)</td>
+      <td>172.16.11.4/24</td>
+      <td>-</td>
+      <td>172.16.11.1</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>SEG1 (VPC)</td>
+      <td>172.16.12.3/24</td>
+      <td>-</td>
+      <td>172.16.12.1</td>
+      <td>408</td>
+    </tr>
+    <tr>
+      <td>SEG2 (VPC)</td>
+      <td>172.16.12.4/24</td>
+      <td>-</td>
+      <td>172.16.12.1</td>
+      <td>408</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
 #### Implementación de la topología
 
 <p align="center">
@@ -375,8 +479,86 @@
 
 <p align="justify">El STP, definido por el estándar IEEE 802.1d es un protocolo que funciona en el <strong>nivel de la capa 2</strong> del modelo OSI y su principal objetivo es controlar los enlaces redundantes, asegurando el rendimiento de una red.</p>
 
-
-
-
-
-<!-- 3 innovaciones disruptivas, caracteristicas -->
+#### Presupuesto
+<table>
+  <thead>
+    <tr>
+      <th>Cantidad</th>
+      <th>Detalles de materiales</th>
+      <th colspan="2">Expresion en Q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unitario</td>
+      <td>Total</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Metros de cable UTP Cat. 6</td>
+      <td>3.45</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Access Point Ubiquiti AC Pro</td>
+      <td>2,300.00</td>
+      <td>2,300.00</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Rollo de masquin tape 3/4 Blanco</td>
+      <td>20.70</td>
+      <td>20.70</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Instalaciones de cableado, ponchado, testeado, y etiquetado de puntos de datos</td>
+      <td>500</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Licencia de Firewall (Zyxel USG Flex 200)</td>
+      <td>4,675.90</td>
+      <td>4,675.90</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Tarugos s-6 y tornillo</td>
+      <td>1.15</td>
+      <td>57.50</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Organizador horizontal</td>
+      <td>402.50</td>
+      <td>402.50</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Switch</td>
+      <td>por averiguar</td>
+      <td>por averiguar</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>router</td>
+      <td>por averiguar</td>
+      <td>por averiguar</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>PC</td>
+      <td>por averiguar</td>
+      <td>por averiguar</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total (GTQ)</td>
+      <td>----------</td>
+      <td>9,524.70</td>
+    </tr>
+  </tbody>
+</table>
