@@ -499,14 +499,14 @@
       <td>Total</td>
     </tr>
     <tr>
-      <td>20</td>
+      <td>50</td>
       <td>Metros de cable UTP Cat. 6</td>
       <td>20.00</td>
-      <td>839.20</td>
+      <td>1,000.00</td>
     </tr>
     <tr>
       <td>5</td>
-      <td>Patch panel (24 Puertos CAT 6 Tipo Keystone)</td>
+      <td>Patch panel (8 Puertos CAT 6 Tipo Keystone)</td>
       <td>1,151</td>
       <td>5,755</td>
     </tr>
@@ -517,9 +517,9 @@
     </tr>
     <tr>
       <td>1</td>
-      <td>Access Point Ubiquiti AC Pro</td>
-      <td>2,300.00/Mes</td>
-      <td>2,300.00</td>
+      <td>Paquete de Conectores RJ45</td>
+      <td>45.00</td>
+      <td>45.00</td>
     </tr>
     <tr>
       <td>1</td>
@@ -528,9 +528,40 @@
       <td>5,819.00</td>
     </tr>
     <tr>
+    <tr>
+      <td>7</td>
+      <td>Organizador Horizontal 2 U tipo</td>
+      <td>196.94</td>
+      <td>1,378.58</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Patch Cord pequeño Cat6 de 1
+pie Supranet</td>
+      <td>14.63</td>
+      <td>234.1</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Patch Cord largo Cat6 de 7
+pie Supranet</td>
+      <td>26.54</td>
+      <td>212.32</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Instalación, configuración y
+puesta en marcha de los
+equipos cotizados. Incluye
+mano de obra y materiales
+consumibles de instalación.</td>
+      <td>15,500.00</td>
+      <td>15,500.00</td>
+    </tr>
+    <tr>
       <td colspan="2">Total (GTQ)</td>
       <td>----------</td>
-      <td>Q.26,178.85</td>
+      <td>Q.41,409.65</td>
     </tr>
   </tbody>
 </table>
