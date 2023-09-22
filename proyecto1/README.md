@@ -122,7 +122,7 @@
 #### Implementación de la topología
 
 <p align="center">
-  <img src="./topologia.png" alt="Topologia" width="550" height="250">
+  <img src="./topologia.png" alt="Topologia" width="75" height="350">
 </p>
 
 #### Construcción de la topología
@@ -480,6 +480,9 @@
 <p align="justify">El STP, definido por el estándar IEEE 802.1d es un protocolo que funciona en el <strong>nivel de la capa 2</strong> del modelo OSI y su principal objetivo es controlar los enlaces redundantes, asegurando el rendimiento de una red.</p>
 
 #### Presupuesto
+
+<p align="justify">Para que una topologia funciones de manera correcta, ademas de que cada dispostivo debe contener una configuracion correcta, se debe contar una calidad alta en cada dispositovo, por lo que se recomienda siempre comprar productos de alta calidad y certificados, para garantizar el buen funcionamiento de todo el ambiente.</p>
+
 <table>
   <thead>
     <tr>
@@ -498,14 +501,8 @@
     <tr>
       <td>20</td>
       <td>Metros de cable UTP Cat. 6</td>
-      <td>3.45</td>
-      <td>69</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Access Point Ubiquiti AC Pro</td>
-      <td>2,300.00</td>
-      <td>2,300.00</td>
+      <td>41.96</td>
+      <td>839.20</td>
     </tr>
     <tr>
       <td>1</td>
@@ -513,52 +510,21 @@
       <td>20.70</td>
       <td>20.70</td>
     </tr>
-    <tr>
-      <td>4</td>
-      <td>Instalaciones de cableado, ponchado, testeado, y etiquetado de puntos de datos</td>
-      <td>500</td>
-      <td>2000</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Licencia de Firewall (Zyxel USG Flex 200)</td>
-      <td>4,675.90</td>
-      <td>4,675.90</td>
-    </tr>
-    <tr>
-      <td>50</td>
-      <td>Tarugos s-6 y tornillo</td>
-      <td>1.15</td>
-      <td>57.50</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Organizador horizontal</td>
-      <td>402.50</td>
-      <td>402.50</td>
-    </tr>
-    <tr>
       <td>7</td>
-      <td>Switch</td>
-      <td>por averiguar</td>
-      <td>por averiguar</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>router</td>
-      <td>por averiguar</td>
-      <td>por averiguar</td>
+      <td>Switch (Cisco Catalyst capa L2/L3 - 08puertos)</td>
+      <td>1637.95</td>
+      <td>11,465.65</td>
     </tr>
     <tr>
       <td>8</td>
-      <td>PC</td>
-      <td>por averiguar</td>
-      <td>por averiguar</td>
+      <td>Amazon VPCS</td>
+      <td>326.91/Mes</td>
+      <td>2615.28</td>
     </tr>
     <tr>
       <td colspan="2">Total (GTQ)</td>
       <td>----------</td>
-      <td>9,524.70</td>
+      <td>Q.14,940.83</td>
     </tr>
   </tbody>
 </table>
