@@ -122,7 +122,7 @@
 #### Implementación de la topología
 
 <p align="center">
-  <img src="./topologia.png" alt="Topologia" width="75" height="350">
+  <img src="./topologia.png" alt="Topologia" width="750" height="350">
 </p>
 
 #### Construcción de la topología
