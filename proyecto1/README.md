@@ -501,14 +501,14 @@
     <tr>
       <td>20</td>
       <td>Metros de cable UTP Cat. 6</td>
-      <td>41.96</td>
+      <td>20.00</td>
       <td>839.20</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td>Rollo de masquin tape 3/4 Blanco</td>
-      <td>20.70</td>
-      <td>20.70</td>
+      <td>5</td>
+      <td>Patch panel (24 Puertos CAT 6 Tipo Keystone)</td>
+      <td>1,151</td>
+      <td>5,755</td>
     </tr>
       <td>7</td>
       <td>Switch (Cisco Catalyst capa L2/L3 - 08puertos)</td>
@@ -516,15 +516,21 @@
       <td>11,465.65</td>
     </tr>
     <tr>
-      <td>8</td>
-      <td>Amazon VPCS</td>
-      <td>326.91/Mes</td>
-      <td>2615.28</td>
+      <td>1</td>
+      <td>Access Point Ubiquiti AC Pro</td>
+      <td>2,300.00/Mes</td>
+      <td>2,300.00</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>gabinete o rack</td>
+      <td>5,819.00</td>
+      <td>5,819.00</td>
     </tr>
     <tr>
       <td colspan="2">Total (GTQ)</td>
       <td>----------</td>
-      <td>Q.14,940.83</td>
+      <td>Q.26,178.85</td>
     </tr>
   </tbody>
 </table>
