@@ -167,6 +167,17 @@ exit
 do write
 ```
 
+### Configuración de SW7
+```bash
+enable
+configure terminal
+hostname SW7
+interface range e0/2-3
+channel-group 1 mode active
+exit
+do write
+```
+
 ### Configuración de VPC11
 
 ```bash
