@@ -522,3 +522,26 @@ ip 108.178.0.4/24 108.178.0.1
 savegit status
 
 ```
+
+### Capturas
+
+#### Protocolo GLBP:
+
+<p align="center">
+  <img src="./img/r2glbp.png" alt="r2 glbp" width="750" height="350">
+</p>
+
+#### Protocolo HSRP:
+
+<p align="center">
+  <img src="./img/r5stndby.png" alt="r3 hsrp" width="750" height="350">
+</p>
+
+#### Ping vpc 11 to vpc 12:
+
+<p align="center">
+  <img src="./img/ping.png" alt="ping" width="750" height="350">
+</p>
+
+
+//show glbp brief //show standby brief
