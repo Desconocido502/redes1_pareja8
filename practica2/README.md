@@ -222,10 +222,10 @@ standby 2 preempt
 
 #### Creación de IP virtual con GLBP:
 ```bash
-glbp <grupo> ip <dirección_ip_virtual>
-glbp <grupo> preempt
-glbp <grupo> priority <prioridad>
-glbp <grupo> load-balancing round-robin
+glbp 1 ip 108.168.0.1
+glbp 1 preempt
+dlbp 1 priority 100
+glbp 1 load-balancing round-robin
 ```
 
 #### Configuración de VPC:
@@ -519,6 +519,6 @@ save
 ```bash
 set pcname VPC12
 ip 108.178.0.4/24 108.178.0.1
-savegit stauts
+savegit status
 
 ```
